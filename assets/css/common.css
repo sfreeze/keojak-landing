@@ -1,0 +1,157 @@
+/*** reset & common, color, component styles ***/
+@charset "utf-8";
+
+.fouc {
+    display: none;
+}
+
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,
+h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,
+cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,
+/* strong, */
+sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,
+form,label,legend,table,caption,tbody,tfoot,thead,tr,th,
+td,article,aside,canvas,details,embed,figure,figcaption,
+footer,header,hgroup,menu,nav,output,ruby,section,summary,
+time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1;
+    font-size: 1em;
+    /* 230919 overflow: hidden; 160rem 아래일 때 가로 스크롤이 생기게 하기 위함 */
+}
+
+article,aside,details,figcaption,figure,footer,
+header,main,hgroup,menu,nav,section {
+    display: block;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+label,img,input,select,textarea,button {
+    vertical-align: middle;
+}
+
+img {
+    display: block;
+}
+
+ol,ul,li {
+    list-style: none;
+}
+
+blockquote,q {
+    quotes: none;
+}
+
+blockquote:before,blockquote:after,
+q:before,q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body,input,select,textarea,button {
+    color: var(--gray-900);
+    border: 0;
+    font-family: 'Pretendard', sans-serif;
+    color: var(--black);
+    box-sizing: border-box
+}
+
+a {
+    color: var(--gray-900);
+    text-decoration: none;
+}
+
+input,textarea,select,button,label {
+    cursor: pointer;
+}
+
+input:disabled,
+button:disabled {
+    cursor: default;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+div::-webkit-scrollbar-button:end:increment {
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 6px;
+    width: 6px;
+    background: var(--gray-300);
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+/* 접근성 - 바로가기 메뉴 */
+#skipMenu {
+    position: relative;
+    z-index: 9999;
+}
+
+#skipMenu>a {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    line-height: 30px;
+    background-color: #333;
+    color: #fff;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+#skipMenu>a:focus,
+#skipMenu>a:active {
+    top: 0;
+}
+
+/* 접근성 - 스크린 리더 */
+.hidden {
+    overflow: hidden;
+    border: 0;
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+}
