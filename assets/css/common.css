@@ -96,31 +96,6 @@ button:disabled {
     cursor: default;
 }
 
-::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-}
-
-::-webkit-scrollbar-button:start:decrement,
-div::-webkit-scrollbar-button:end:increment {
-    display: block;
-    width: 0;
-    height: 0;
-}
-
-::-webkit-scrollbar-track {
-    background: #fff;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-    height: 6px;
-    width: 6px;
-    background: var(--gray-300);
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-}
 
 /* 접근성 - 바로가기 메뉴 */
 #skipMenu {
