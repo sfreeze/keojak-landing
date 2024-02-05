@@ -16,7 +16,7 @@ function getCurrentScroll() {
   return document.body.pageYOffset || document.documentElement.scrollTop;
 }
 
-document.querySelectorAll('.menu__item > a').forEach(anchor => {
+document.querySelectorAll('a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
