@@ -388,10 +388,13 @@
         gap: 1.6rem;
     }
     .visual__text-wrap > h1 {
-        font-size: 3.6rem;
+        font-size: 3rem;
     }
     .visual__text-wrap > h1 br {
         display: block;
+    }
+    .visual__desc {
+        font-size: 1.6rem;
     }
     .store-link-wrap {
         display: flex;
@@ -430,7 +433,7 @@
         font-size: 1.6rem;
     }
     .section__title {
-        font-size: 3.2rem;
+        font-size: 2.6rem;
     }
     .section__title + .section__desc {
         margin-top: 1.6rem;
